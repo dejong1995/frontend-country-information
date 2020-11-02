@@ -1,0 +1,96 @@
+* {
+    margin-top: 0px;
+}
+
+.header {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+    text-align: center;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.form {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#globe {
+    margin-top: 0px;
+}
+
+#input {
+    width: 350px;
+    height: 30px;
+    margin-right: 0px;
+    border: 2px solid darkgray;
+    padding-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#search {
+    width: 80px;
+    height: 34px;
+    margin-left: 0px;
+    border: 1px solid darkolivegreen;
+    background-color: darkolivegreen;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+#search:active {
+    background-color: darkolivegreen;
+    border: 1px solid darkolivegreen;
+}
+
+#flag img {
+    width: 150px;
+    height: 90px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.information {
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 150px 300px;
+    grid-template-rows: auto 160px;
+    grid-template-areas:
+        "flag name"
+        "info info";
+}
+
+#flag {
+    grid-area: flag;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#countryName {
+    grid-area: name;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 30px;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#information {
+    grid-area: info;
+    padding-top: 20px;
+    padding-left: 20px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+#info {
+    border: none;
+}
