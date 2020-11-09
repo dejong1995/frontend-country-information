@@ -94,3 +94,95 @@
 #info {
     border: none;
 }
+
+#listOfCountries {
+    line-height: 0.5;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: #FAFAFA;
+    padding: 20px;
+
+}
+
+#listOfCountries:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Africa,
+.Americas,
+.Asia,
+.Europe,
+.Oceania,
+.notDefined {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.Africa:hover .tooltiptext,
+.Americas:hover .tooltiptext,
+.Asia:hover .tooltiptext,
+.Europe:hover .tooltiptext,
+.Oceania:hover .tooltiptext,
+.notDefined:hover .tooltiptext {
+    visibility: visible;
+}
+
+.Africa {
+    color: #5371B7;
+    font-weight: bold;
+    float: left;
+    width: 33.33%;
+}
+
+.Americas {
+    color: #4C824B;
+    font-weight: bold;
+    float: left;
+    width: 33.33%;
+}
+
+.Asia {
+    color: #D14E5B;
+    font-weight: bold;
+    float: left;
+    width: 33.33%;
+}
+
+.Europe {
+    color: #FFD435;
+    font-weight: bold;
+    float: left;
+    width: 33.33%;
+}
+
+.Oceania {
+    color: #A653BA;
+    font-weight: bold;
+    float: left;
+    width: 33.33%;
+}
+
+.notDefined {
+    font-weight: bold;
+    float: left;
+    width: 33.33%;
+}
